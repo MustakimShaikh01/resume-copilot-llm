@@ -1,0 +1,32 @@
+# Core LLM & Training
+transformers>=4.38.0
+datasets>=2.17.0
+peft>=0.9.0
+accelerate>=0.27.0
+trl>=0.7.11
+bitsandbytes>=0.42.0
+
+# Data
+pandas>=2.0.0
+kaggle>=1.6.0
+scikit-learn>=1.3.0
+
+# Embeddings & RAG
+sentence-transformers>=2.5.0
+faiss-cpu>=1.7.4
+langchain>=0.1.9
+langchain-community>=0.0.24
+
+# PDF Parsing
+pypdf>=4.0.0
+
+# Hugging Face
+huggingface_hub>=0.21.0
+
+# Demo UI
+gradio>=4.19.0
+
+# Utils
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+torch>=2.2.0

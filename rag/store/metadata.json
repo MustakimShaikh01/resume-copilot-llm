@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Data Scientist: Python, Pandas, Scikit-learn, SQL, A/B testing, Tableau.",
+    "source": "sample",
+    "role": "Data Scientist"
+  },
+  {
+    "text": "ML Engineer: PyTorch, MLflow, Docker, Kubernetes, model deployment expertise.",
+    "source": "sample",
+    "role": "ML Engineer"
+  },
+  {
+    "text": "Backend Engineer: Go, gRPC, PostgreSQL, Kafka, microservices architecture.",
+    "source": "sample",
+    "role": "Backend Engineer"
+  },
+  {
+    "text": "Product Manager: roadmap planning, cross-functional leadership, OKRs, Jira.",
+    "source": "sample",
+    "role": "Product Manager"
+  }
+]
