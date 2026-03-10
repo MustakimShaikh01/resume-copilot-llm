@@ -23,7 +23,7 @@ from pathlib import Path
 
 import torch
 from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig, pipeline
 
 ROOT        = Path(__file__).resolve().parent.parent
 ADAPTER_DIR = ROOT / "training" / "output"
@@ -84,6 +84,10 @@ def load_pipeline(mode: str, hub_repo: str) -> pipeline:
         )
 
     tokenizer.pad_token = tokenizer.eos_token
+
+    # Reset generation_config to remove the pre-baked max_length=2048
+    # so there is no conflict when we later pass max_new_tokens explicitly.
+    model.generation_config = GenerationConfig(pad_token_id=tokenizer.eos_token_id)
 
     pipe = pipeline(
         "text-generation",
